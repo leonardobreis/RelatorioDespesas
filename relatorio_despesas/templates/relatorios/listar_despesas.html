@@ -1,0 +1,7 @@
+<h2>Relatórios de Despesa</h2>
+<ul>
+    {% for despesa in despesas %}
+        <li>{{ despesa.descricao }} - {{ despesa.valor }} - {{ despesa.data }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'adicionar_despesa' %}">Adicionar Nova Despesa</a>
